@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="../js/login.controller.js"></script>
+</head>
+<body ng-app="app">
+<div class="login-page">
+    <div class="form">
+        <form class="login-form" ng-controller="LoginController">
+            <input type="text" ng-model="uname" placeholder="username"/>
+            <input type="password" ng-model="upass" placeholder="password"/>
+            <button ng-click="login(uname,upass)">login</button>
+            <div ng-bind="checkLogin"></div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
